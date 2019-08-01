@@ -1,0 +1,19 @@
+server:
+  port: 8803
+spring:
+  data: 
+    neo4j:
+      username: neo4j
+      password: neo4j@wankeauto.com
+      uri: http://192.168.2.13:7479
+  redis:
+    database: 0
+    host: 192.168.2.13
+    port: 8812
+    password: Jhf&*d93jfdKJSf
+    pool:
+      max-active: 400
+      max-wait: 10000
+      max-idle: 100
+      min-idle: 0
+    timeout: 0
