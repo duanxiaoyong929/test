@@ -2,6 +2,7 @@ server:
   port: 8901
 spring: 
   redis: 
+    timeout: 0
     database: 0
     host: 192.168.2.13
     port: 8811
@@ -11,4 +12,3 @@ spring:
       max-wait: 10000
       max-idle: 8
       min-idle: 0
-  timeout: 0
