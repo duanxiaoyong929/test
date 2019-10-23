@@ -4,8 +4,8 @@ spring:
   data: 
     neo4j:
       username: neo4j
-      password: neo4j@wankeauto.com
-      uri: http://192.168.2.116:7475
+      password: 123456
+      uri: http://192.168.2.169:7474
   redis:
     database: 0
     host: 192.168.2.13
