@@ -34,7 +34,7 @@ spring:
     neo4j:
       username: neo4j
       password: neo4j@wankeauto.com
-      uri: http://192.168.2.13:7479
+      uri: http://192.168.2.116:7478
 elaticjob: 
   zookeeper: 
     server-lists: 192.168.2.32:2181
