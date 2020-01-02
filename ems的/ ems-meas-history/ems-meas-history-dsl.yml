@@ -3,9 +3,9 @@ server:
 spring: 
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://192.168.2.13:3306/sgool4?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
-    username: wanke
-    password: 5j1#H!^d
+    url: jdbc:mysql://127.0.0.1:3306/sgooltest?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
     driverClassName: com.mysql.jdbc.Driver
     # 初始化大小，最小，最大
     initialSize: 5
