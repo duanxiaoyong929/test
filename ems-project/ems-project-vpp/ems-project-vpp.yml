@@ -1,15 +1,15 @@
 server:
-  port: 9903
+  port: 10000
 spring:
   data: 
     neo4j:
       username: neo4j
       password: neo4j@wankeauto.com
-      uri: http://192.168.2.13:7479
+      uri: http://192.168.2.116:7475
   redis:
     database: 0
     host: 192.168.2.13
-    port: 8812
+    port: 8811
     password: Jhf&*d93jfdKJSf
     pool:
       max-active: 400
@@ -19,7 +19,7 @@ spring:
     timeout: 0
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://192.168.2.13:3306/sgool4?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://192.168.2.13:3306/sgool4?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&useSSL=true
     username: wanke
     password: 5j1#H!^d
     driverClassName: com.mysql.jdbc.Driver
@@ -46,3 +46,4 @@ spring:
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
   jpa:
     database: mysql 
+  show-sql: true
