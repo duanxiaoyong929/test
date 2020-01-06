@@ -22,7 +22,7 @@ spring:
     url: jdbc:mysql://192.168.2.13:3306/sgool4?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&useSSL=true
     username: wanke
     password: 5j1#H!^d
-    driverClassName: com.mysql.jdbc.Driver
+    driverClassName: com.mysql.cj.jdbc.Driver
     # 初始化大小，最小，最大
     initialSize: 5
     minIdle: 5
