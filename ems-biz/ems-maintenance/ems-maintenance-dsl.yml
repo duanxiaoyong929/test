@@ -5,11 +5,11 @@ spring:
     neo4j:
       username: neo4j
       password: neo4j@wankeauto.com
-      uri: http://192.168.2.116:7475
+      uri: http://39.108.124.91:8068
   redis:
     database: 0
-    host: 192.168.2.13
-    port: 8811
+    host: 39.108.124.91
+    port: 8067
     password: Jhf&*d93jfdKJSf
     pool:
       max-active: 400
