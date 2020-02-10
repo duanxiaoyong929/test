@@ -74,3 +74,11 @@ ribbon:
   ConnectTimeout: 50000
   eureka:
     enabled: true   
+elaticjob: 
+  zookeeper: 
+    server-lists: localhost:2181
+    namespace: ems-elastic
+    base-sleep-time-milliseconds: 1000
+    max-sleep-time-milliseconds: 3000
+    max-retries: 3
+    digest:     
