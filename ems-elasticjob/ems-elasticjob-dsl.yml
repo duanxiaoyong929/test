@@ -76,9 +76,9 @@ ribbon:
     enabled: true   
 elaticjob: 
   zookeeper: 
-    server-lists: 127.0.0.1:2181
+    server-lists: 192.168.2.32:2181
     namespace: ems-elastic
     base-sleep-time-milliseconds: 1000
     max-sleep-time-milliseconds: 3000
     max-retries: 3
-    digest:     
+    digest: 
