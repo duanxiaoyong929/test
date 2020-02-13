@@ -1,19 +1,5 @@
 server:
   port: 8901
-hystrix:
-    command:
-      default:
-        execution:
-          isolation:
-            thread:
-              timeoutInMilliseconds: 10000
-feign:
-  client:
-    config:
-      default:
-        connectTimeout: 5000
-        readTimeout: 15000
-        loggerLevel: basic
 spring:
   data: 
     neo4j:
