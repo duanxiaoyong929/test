@@ -59,7 +59,7 @@ spring:
     # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
   jpa:
-    database: mysql  
+    database: mysql 
 ribbon:
   #  eureka:
   #    enabled: true
@@ -67,7 +67,7 @@ ribbon:
   ReadTimeout: 50000   #负载均衡超时时间，默认值5000
   ConnectTimeout: 50000 #ribbon请求连接的超时时间，默认值2000
   MaxAutoRetries: 0     #对当前实例的重试次数，默认0
-  MaxAutoRetriesNextServer: 0 #对切换实例的重试次数，默认1
+  MaxAutoRetriesNextServer: 0 #对切换实例的重试次数
 hystrix:
   command:
     default:  #default全局有效，service id指定应用有效
