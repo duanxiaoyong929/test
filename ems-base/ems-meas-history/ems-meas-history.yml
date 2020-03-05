@@ -42,6 +42,6 @@ hbase:
 tsdb: 
   url: 192.168.2.13
 influxdb: 
- url: 192.168.2.116:8086 
+ url: http://192.168.2.116:8086 
  username: wanke 
  password: wanke@2019   
