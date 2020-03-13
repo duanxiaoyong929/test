@@ -46,4 +46,7 @@ spring:
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
   jpa:
     database: mysql 
-  show-sql: true
+  kafka:
+    bootstrap-servers: 192.168.2.32:9092,192.168.2.33:9092,192.168.2.34:9092
+    consumer:
+      group-id: myGroup
