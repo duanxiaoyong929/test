@@ -6,6 +6,9 @@ spring:
       username: neo4j
       password: neo4j@wankeauto.com
       uri: http://192.168.2.116:7475
+  kafka:
+    bootstrap-servers: 192.168.2.32:9092,192.168.2.33:9092,192.168.2.34:9092
+    group-id: myGroup    
   redis:
     database: 0
     host: 192.168.2.13
