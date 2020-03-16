@@ -48,11 +48,7 @@ spring:
     # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
   jpa:
-    database: mysql 
-  kafka:
-    bootstrap-servers: 192.168.2.32:9092,192.168.2.33:9092,192.168.2.34:9092
-    consumer:
-      group-id: myGroup
+    database: mysql
 ftp:
   hostname: 192.168.2.37
   port: 21
