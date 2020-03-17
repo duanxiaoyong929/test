@@ -58,6 +58,11 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 60000
+    ems-authority:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000        
 feign:
   hystrix:
     enabled: true    
@@ -67,3 +72,4 @@ feign:
         connectTimeout: 5000
         readTimeout: 5000
         loggerLevel: basic
+        
