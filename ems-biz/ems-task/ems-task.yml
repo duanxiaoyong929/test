@@ -58,12 +58,12 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 60000
-            
-ribbon:
-  ReadTimeout: 50000
-  ConnectTimeout: 50000
-  MaxAutoRetries: 0
-  MaxAutoRetriesNextServer: 1
 feign:
   hystrix:
     enabled: true    
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: basic
