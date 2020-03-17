@@ -51,43 +51,4 @@ spring:
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
   jpa:
     database: mysql 
-feign:
-  hystrix:
-    enabled: true
-
-ribbon:
-  eureka:
-    enabled: true
-  hystrix:
-    enabled: false
-  ConnectTimeout: 20000
-  ReadTimeout: 20000
-  OkToRetryOnAllOperations: true
-  MaxAutoRetriesNextServer: 0
-  MaxAutoRetries: 1
-
-## hystrix
-hystrix:
-  threadpool:
-    service-res:
-      coreSize: 20
-      maxQueueSize: 200
-      queueSizeRejectionThreshold: 3
-    default:
-      coreSize: 10
-      maxQueueSize: 200
-      queueSizeRejectionThreshold: 2
-  command:
-    default:
-      execution:
-        timeout:
-          enabled: true
-        isolation:
-          strategy: THREAD
-          thread:
-            timeoutInMilliseconds: 15000
-            interruptOnTimeout: true
-            interruptOnFutureCancel: false
-          semaphore:
-            maxConcurrentRequests: 2
         
