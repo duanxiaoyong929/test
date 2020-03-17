@@ -51,20 +51,31 @@ spring:
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
   jpa:
     database: mysql 
-ribbon:
-  #  eureka:
-  #    enabled: true
-  OkToRetryOnAllOperations: false #对所有操作请求都进行重试,默认false
-  ReadTimeout: 50000   #负载均衡超时时间，默认值5000
-  ConnectTimeout: 50000 #ribbon请求连接的超时时间，默认值2000
-  MaxAutoRetries: 0     #对当前实例的重试次数，默认0
-  MaxAutoRetriesNextServer: 0 #对切换实例的重试次数
 hystrix:
-  command:
-    default:  #default全局有效，service id指定应用有效
+  threadpool:
+    default:
+      #并发执行的最大线程数，默认10
+      coreSize: 500
+      maximumSize: 500
+      allowMaximumSizeToDivergeFromCoreSize: true
+      #最大队列数量
+      maxQueueSize: -1
       execution:
-        timeout:
-          enabled: false
         isolation:
           thread:
-            timeoutInMilliseconds: 60000 #断路器超时时间，默认10    
+            timeoutInMilliseconds: 60000
+  command:
+    default:
+      execution:
+        timeout:
+          #如果enabled设置为false，则请求超时交给ribbon控制,为true,则超时作为熔断根据
+          enabled: true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+ribbon:
+  #服务配置serviceId方式时，以下超时规则生效
+  ReadTimeout: 50000
+  ConnectTimeout: 50000
+  eureka:
+    enabled: true
