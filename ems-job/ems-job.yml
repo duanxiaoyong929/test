@@ -43,3 +43,4 @@ elaticjob:
     max-sleep-time-milliseconds: 3000
     max-retries: 3
     digest: 
+    session-time-out: 1000
