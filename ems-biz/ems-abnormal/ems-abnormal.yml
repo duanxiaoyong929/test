@@ -1,6 +1,8 @@
 server:
   port: 8902
 spring:
+  profiles:
+    active: test
   data: 
     neo4j:
       username: neo4j
