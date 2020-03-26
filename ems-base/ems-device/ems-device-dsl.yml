@@ -5,7 +5,7 @@ spring:
     neo4j:
       username: neo4j
       password: neo4j@wankeauto.com
-      uri: http://39.108.124.91:8068
+      uri: http://192.168.2.116:7475
   kafka:
     bootstrap-servers: 192.168.2.222:9092
     group-id: myGroup    
@@ -22,7 +22,7 @@ spring:
     timeout: 0
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://39.108.124.91:8046/sgool4?useUnicode=true&characterEncoding=utf-8&serverTimezone=CTT
+    url: jdbc:mysql:/192.168.2.13/sgool4?useUnicode=true&characterEncoding=utf-8&serverTimezone=CTT
     username: wanke
     password: 5j1#H!^d
     driverClassName: com.mysql.cj.jdbc.Driver
