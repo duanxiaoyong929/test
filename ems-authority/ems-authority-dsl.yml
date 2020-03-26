@@ -8,7 +8,7 @@ spring:
       password: neo4j@wankeauto.com
       uri: http://192.168.2.116:7475
   kafka:
-    bootstrap-servers: 192.168.2.139:9092
+    bootstrap-servers: 192.168.2.222:9092
     group-id: myGroup
     consumer:
       group-id: consumer-group
