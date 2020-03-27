@@ -35,3 +35,9 @@ spring:
       username: neo4j
       password: neo4j@wankeauto.com
       uri: http://192.168.2.116:7475
+ftp:
+  hostname: 192.168.2.37
+  port: 21
+  username: wanke
+  password: wanke
+  timeout: 30000
