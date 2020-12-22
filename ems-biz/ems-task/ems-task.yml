@@ -72,5 +72,30 @@ feign:
       default:
         connectTimeout: 5000
         readTimeout: 5000
-        loggerLevel: basic    
-        
+        loggerLevel: basic
+ftp:
+  hostname: 13.211.228.219
+  port: 21
+  username: wanke
+  password: wanke2020
+  timeout: 30000
+smtp:
+  host: smtp.mxhichina.com
+  userName: csc@powerlution.net
+  passWord: Aa123456
+sms:
+  templateCode:
+    cn:
+      negativeElectricityPrice: SMS_207520600
+      contractExpiryCode: SMS_207530624
+      dayReportFormCode: SMS_200690957
+    en:
+      negativeElectricityPrice: SMS_207495681
+      contractExpiryCode: SMS_200693361
+      dayReportFormCode: SMS_207530637
+tag:
+  alarm: alarm
+  alarmclear: alarmClear
+  negativeprice: negativePrice
+  contractExpiry: expire_contract
+  reporters: reporters
