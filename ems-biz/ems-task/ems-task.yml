@@ -87,7 +87,7 @@ sms:
   templateCode:
     cn:
       negativeElectricityPrice: SMS_207520600
-      contractExpiryCode:  SMS_200690957
+      contractExpiryCode:  SMS_207960467
       dayReportFormCode:  SMS_207530624
     en:
       negativeElectricityPrice: SMS_207495681
