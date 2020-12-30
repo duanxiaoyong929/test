@@ -107,6 +107,6 @@ sms:
 tag:
   alarm: alarm
   alarmclear: alarmClear
-  negativeprice: negativePrice
-  contractExpiry: expire_contract
-  reporters: reporters
+  negativeprice: testNegativePrice
+  contractExpiry: testExpire_contract
+  reporters: testReporters
