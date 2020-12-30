@@ -85,14 +85,25 @@ smtp:
   passWord: Aa123456
 sms:
   templateCode:
-    cn:
-      negativeElectricityPrice: SMS_207520600
-      contractExpiryCode:  SMS_207971879
-      dayReportFormCode:  SMS_207530624
-    en:
-      negativeElectricityPrice: SMS_207495681
-      contractExpiryCode: SMS_200693361
-      dayReportFormCode: SMS_207530637
+    china:
+      cn:
+        negativeElectricityPrice: SMS_207520600
+        contractExpiryCode:  SMS_207971879
+        dayReportFormCode:  SMS_207530624
+      en:
+        negativeElectricityPrice: SMS_207953458
+        contractExpiryCode: SMS_207963503
+        dayReportFormCode: SMS_207948502
+    other:
+      cn:
+        negativeElectricityPrice: SMS_207974334
+        contractExpiryCode: SMS_207973472
+        dayReportFormCode: SMS_207973460
+      en:
+        negativeElectricityPrice: SMS_207495681
+        contractExpiryCode: SMS_200693361
+        dayReportFormCode: SMS_207530637
+
 tag:
   alarm: alarm
   alarmclear: alarmClear
