@@ -89,11 +89,11 @@ sms:
       cn:
         negativeElectricityPrice: SMS_207520600
         contractExpiryCode:  SMS_207971879
-        dayReportFormCode:  SMS_207530624
+        dayReportFormCode:  SMS_208627010
       en:
         negativeElectricityPrice: SMS_207953458
         contractExpiryCode: SMS_207963503
-        dayReportFormCode: SMS_207948502
+        dayReportFormCode: SMS_208582279
     other:
       cn:
         negativeElectricityPrice: SMS_207974334
