@@ -1,20 +1,19 @@
 server:
   port: 8901
 spring:
-  data: 
+  data:
     neo4j:
       username: neo4j
       password: neo4j@wankeauto.com
       uri: http://192.168.2.116:7475
   kafka:
     bootstrap-servers: 192.168.2.32:9092,192.168.2.33:9092,192.168.2.34:9092
-    group-id: myGroup
     consumer:
-      group-id: consumer-group
+      group-id: ems-task-consumer
   redis:
     database: 0
     host: 192.168.2.13
-    port: 8813
+    port: 8811
     password: Jhf&*d93jfdKJSf
     pool:
       max-active: 400
@@ -50,18 +49,18 @@ spring:
     # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
   jpa:
-    database: mysql 
+    database: mysql
 hystrix:
   command:
     default:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 15000
+            timeoutInMilliseconds: 60000
 ribbon:
   #服务配置serviceId方式时，以下超时规则生效
-  ReadTimeout: 50000
-  ConnectTimeout: 50000
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
   eureka:
     enabled: true
 feign:
@@ -70,14 +69,14 @@ feign:
   client:
     config:
       default:
-        connectTimeout: 5000
-        readTimeout: 5000
+        connectTimeout: 60000
+        readTimeout: 60000
         loggerLevel: basic
 ftp:
-  hostname: 13.211.228.219
+  hostname: 192.168.2.37
   port: 21
   username: wanke
-  password: wanke2020
+  password: wanke
   timeout: 30000
 smtp:
   host: smtp.mxhichina.com
@@ -105,8 +104,8 @@ sms:
         dayReportFormCode: SMS_207530637
 
 tag:
-  alarm: alarm
-  alarmclear: alarmClear
+  alarm: testAlarm
+  alarmclear: testAlarmClear
   negativeprice: testNegativePrice
   contractExpiry: testExpire_contract
   reporters: testReporters
